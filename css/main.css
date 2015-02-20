@@ -194,7 +194,6 @@ section h2 {
 }
 
 section.about {
-    color: #fff;
     background: #E6D01E;
 }
 
@@ -262,6 +261,12 @@ section.about {
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
+    }
+}
+
+@media(max-width:766px) {
+    #portfolio .portfolio-item .portfolio-link .caption .caption-content  {
+        padding: 130px;
     }
 }
 
@@ -378,7 +383,7 @@ section.about {
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #2c3e50;
 }
 
 .floating-label-form-group input,
@@ -448,7 +453,6 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 30px;
-    background-color: rgba(0,0,0,0.2);
 }
 
 footer .footer-col {
