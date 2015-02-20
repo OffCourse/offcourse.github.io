@@ -129,6 +129,12 @@ header img{
 header .radar{
     font-size: 10em;
     color: #E6D01E;
+     transition: transform 2s;
+}
+
+header .radar:hover {
+    font-size: 12em;
+    transform: scale(1.5);
 }
 
 header .intro-text .headline {
@@ -356,16 +362,15 @@ section.about {
     padding-top: 35px;
     text-shadow: 2px 2px #6B6B6B;
     margin-bottom: 40px;
-}
-
-.portfolio-item .icon:first-child{
-    margin-bottom: 100px
-}
-
-div .icon:hover, div .icon:active {
-     font-size: 120%;
 
 }
+
+.portfolio-item .icon:hover {
+     font-size: 13em;
+
+}
+
+
 
 
 /* form styles*/
