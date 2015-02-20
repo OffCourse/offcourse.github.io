@@ -91,6 +91,7 @@ header {
     text-align: center;
     color: #fff;
     background: #72C7B3;
+
 }
 
 header .container {
@@ -190,9 +191,9 @@ section h2 {
     font-size: 3em;
 }
 
-section.success {
+section.about {
     color: #fff;
-    background: #E6D01E;
+    background: #E6D01E
 }
 
 @media(max-width:767px) {
@@ -204,6 +205,9 @@ section.success {
         padding-top: 75px;
     }
 }
+
+
+
 #portfolio h2 {
     color: black;
 }
