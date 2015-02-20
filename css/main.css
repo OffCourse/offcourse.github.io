@@ -14,6 +14,7 @@
 
 body {
     overflow-x: hidden;
+    color:#2c3e50;
 }
 
 p {
@@ -27,10 +28,11 @@ p.small {
 a,
 a:hover,
 a:focus,
-a:active,
+a:active,f
 a.active {
     outline: 0;
     color: #18bc9c;
+    text-decoration: none;
 }
 
 h1,
@@ -173,11 +175,6 @@ section.about {
 }
 
 
-
-#portfolio h2 {
-    color: black;
-}
-
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -195,14 +192,13 @@ section.about {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
@@ -210,10 +206,11 @@ section.about {
     top: 50%;
     width: 100%;
     height: 20px;
-    margin-top: -12px;
+    margin-top: 100px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+
+
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
@@ -320,6 +317,7 @@ form .row:first-child .floating-label-form-group {
 
 footer {
     color: #fff;
+    background: #2c3e50
 }
 
 footer h3 {
@@ -336,33 +334,8 @@ footer .footer-col {
     margin-bottom: 50px;
 }
 
-footer .footer-below {
-    font-family: 'NN';
-    padding: 25px 0;
-    background-color: black;
-}
 
-.footer-below p {
-    float: right;
-    margin-right: 80px;
-    }
 
-.btn-social {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #72C7B3;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 20px;
-    line-height: 45px;
-}
-
-.btn:focus,
-.btn:active,
-.btn.active {
-    outline: 0;
-}
 
 .scroll-top {
     z-index: 1049;
@@ -386,14 +359,20 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content {
+    opacity:0.96;
     padding: 100px 0;
-    min-height: 100%;
+    height: 100vh;
     border: 0;
     border-radius: 0;
     text-align: center;
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+.modal-content .btn {
+    margin-top: 20px;
+    background-color:
 }
 
 .portfolio-modal .modal-content h2 {
@@ -429,7 +408,7 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #2c3e50;
+    /*background-color: #2c3e50;*/
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -439,7 +418,7 @@ footer .footer-below {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #2c3e50;
+/*    background-color: #2c3e50;*/
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -450,11 +429,24 @@ footer .footer-below {
     opacity: 0;
 }
 
-.portfolio-item  img {
-    fill: white;
-    background: black;
-    width:360px;
-    height: 260px;
+.portfolio-item  .icon {
     display: block;
+    font-size: 12em;
+    text-align: center;
+    color: #18bc9c;
 /*    box-shadow: 5px 5px 10px #888888;*/
+}
+.icon:hover {
+   text-decoration: none;
+
+}
+
+footer h6 {
+    font-family: 'NN';
+    font-size: 4em;
+    text-transform: capitalize;
+}
+
+.btn {
+    background-color: #18bc9c !important;
 }
