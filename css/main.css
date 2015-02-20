@@ -44,44 +44,7 @@ h6 {
     font-weight: 700;
 }
 
-hr.star-light,
-hr.star-primary {
-    margin: 25px auto 30px;
-    padding: 0;
-    max-width: 250px;
-    border: 0;
-    border-top: solid 5px;
-    text-align: center;
-}
 
-hr.star-light:after,
-hr.star-primary:after {
-    content: "\f005";
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
-    font-size: 2em;
-}
-
-hr.star-light {
-    border-color: #fff;
-}
-
-hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
-}
-
-hr.star-primary {
-    border-color: #2c3e50;
-}
-
-hr.star-primary:after {
-    color: #2c3e50;
-    background-color: #fff;
-}
 
 .img-centered {
     margin: 0 auto;
@@ -90,8 +53,8 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #72C7B3;
-
+    background: #E6D01E;
+    height:100vh;
 }
 
 header .container {
@@ -133,7 +96,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 15px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -150,12 +113,15 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
+        text-transform: none;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        text-transform: none;
     }
 }
+
 
 .navbar {
     text-transform: uppercase;
@@ -373,6 +339,11 @@ footer .footer-below {
     padding: 25px 0;
     background-color: black;
 }
+
+.footer-below p {
+    float: right;
+    margin-right: 80px;
+    }
 
 .btn-social {
     display: inline-block;
