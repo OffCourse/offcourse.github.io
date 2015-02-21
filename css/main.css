@@ -175,8 +175,12 @@ header .intro-text .skills {
 }
 
 @media(max-width: 767px) {
+    header {
+        height: 100%;
+    }
     header .container{
         padding-top: 100px;
+        padding-bottom: 50px;
     }
 
     header .intro-text .headline{
