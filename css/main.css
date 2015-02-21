@@ -397,6 +397,10 @@ section.about {
         height: auto;
     }
 
+    .portfolio-modal .modal-content h2{
+        font-size: 2em;
+    }
+
     .portfolio-item .icon {
         width: 80%;
         margin-left: 30px;
@@ -404,7 +408,7 @@ section.about {
 
     .portfolio-item .caption-content h3 {
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
