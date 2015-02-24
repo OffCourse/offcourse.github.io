@@ -49,6 +49,8 @@ h6 {
 
 .btn {
     background-color: #18bc9c !important;
+    border-radius: 0;
+    border: 0;
 }
 
 
@@ -135,7 +137,6 @@ header .radar{
 }
 
 
-
 header .intro-text .headline {
     display:        block;
     font-family:   Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -156,7 +157,7 @@ header .intro-text .skills {
     }
 
     header .container {
-        padding-top: 200px;
+        padding-top: 14em;
         padding-bottom: 100px;
     }
 
@@ -217,8 +218,28 @@ section.about {
     section.first {
         padding-top: 75px;
     }
+
+    section.about{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    section.about p {
+        font-size: 95%;
+    }
+
+    section#contact {
+        padding-right: 15px ;
+        padding-left: 15px ;
+    }
 }
 
+@media (min-width:767px) and (max-width:1025px) {
+     .about .container{
+        padding-left: 60px;
+        padding-right: 60px;
+        }
+}
 
 /*portfolio styles*/
 #portfolio .portfolio-item {
@@ -267,7 +288,7 @@ section.about {
     z-index: 2;
 }
 
-@media(min-width:767px) {
+@media(min-width:1024px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
@@ -278,14 +299,13 @@ section.about {
     }
 }
 
-@media(max-width:766px) {
+@media(max-width:1024px) {
     #portfolio .portfolio-item .portfolio-link .caption .caption-content  {
         padding-top: 250px;
     }
 
     #portfolio .portfolio-item .portfolio-link .caption {
         opacity: 0.9;
-
     }
 
     #portfolio .portfolio-item .portfolio-link .caption:active {
@@ -392,7 +412,7 @@ section.about {
     margin-bottom: 40px;
 }
 
-@media (max-width:766px) {
+@media  (max-width: 1024px){
     .portfolio-modal .modal-content {
         height: auto;
     }
@@ -471,10 +491,6 @@ form .row:first-child .floating-label-form-group {
     border-top: 1px solid #000;
 }
 
-#contact .btn {
-    border-radius: 0px;
-    border: 0;
-}
 
 /* footer styles */
 footer {
