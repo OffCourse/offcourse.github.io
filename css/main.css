@@ -135,13 +135,16 @@ header .radar{
      transition: transform 2s;
 }
 
-
 header .intro-text .headline {
     display:        block;
     font-family:   ''NB'';
     font-size:      2em;
     font-weight:  700;
     color: #fff;
+}
+
+.tagline{
+    font-size: 1.7em;
 }
 
 @media(min-width:768px) {
@@ -472,5 +475,6 @@ footer .footer-col {
     font-family: 'NN';
     background-color: #E6D01E;
     box-shadow: none;
-    border: none;
+    border: 0;
+    border-radius: 0;
 }
